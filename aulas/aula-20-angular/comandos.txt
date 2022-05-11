@@ -1,0 +1,18 @@
+npm install -g @angular/cli
+npx ng new nome-projeto
+npx ng generate component components/lista
+npx ng generate service services/githubService
+npx ng generate module lazy --routing
+
+npm install primeng 
+npm install primeicons
+
+Adicionar 3 referencias no style global no arquivo angular.json (projects > NOME_DO_PROJETO > architect > build > options > styles):
+  "node_modules/primeicons/primeicons.css"
+  "node_modules/primeng/resources/themes/lara-light-blue/theme.css"
+  "node_modules/primeng/resources/primeng.min.css"
+
+npm install primeflex
+
+Adicionar no src/styles
+  @import "primeflex/primeflex.css"

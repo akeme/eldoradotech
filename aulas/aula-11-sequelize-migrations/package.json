@@ -1,0 +1,22 @@
+{
+  "name": "aula-11-sequelize-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-database": "npx sequelize-cli db:create",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate-revert": "npx sequelize-cli db:migrate:undo",
+    "seed": "npx sequelize-cli db:seed:all",
+    "seed-revert": "npx sequelize-cli db:seed:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.18.0"
+  }
+}
